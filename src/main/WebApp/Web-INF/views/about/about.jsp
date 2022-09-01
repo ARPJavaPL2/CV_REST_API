@@ -47,8 +47,8 @@
             <ul>
                 <li><a class="nav-link scrollto active" href="/">Home</a></li>
                 <li><a class="nav-link scrollto" href="/about">About</a></li>
-                <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
-                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                <li><a class="nav-link scrollto" href="/resume">Resume</a></li>
+                <li><a class="nav-link scrollto" href="/contact">Contact</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -126,15 +126,15 @@
 
             <div class="section-title">
                 <h2>Skills</h2>
-                <div class="icon-box">
-                    <h8 class="description"><a href='<c:url value="/addSkill"/>'>Dodaj</a></h8>
-                </div>
                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
                     consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
                     fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
-            <%--tu będzie dupa bo są dwie kolumny po 6--%>
 
+        <%--tu będzie dupa bo są dwie kolumny po 6--%>
+            <div class="icon-box">
+                <h8 class="description"><a href='<c:url value="/addSkill"/>'>Dodaj</a></h8>
+            </div>
             <div class="row skills-content">
                 <div class="col-lg-6">
                     <c:forEach items="${skill}" var="title">
@@ -148,11 +148,11 @@
                         <div class="icon-box">
                             <h8 class="description"><a href='<c:url value="/editSkill/${title.id}"/>'>Edytuj</a></h8>
                         </div>
-                        <div class="icon-box">
+
                             <form method="post" action='<c:url value="/deleteSkill/${title.id}"/>'>
-                                <h8 class="description"><input type="submit" value="Kasuj"></h8>
-                            </form>
-                        </div>
+                                 <h8 class="icon-box"><input type="submit" value="Kasuj"></h8>
+                                </form>
+
                     </c:forEach>
                 </div>
 
