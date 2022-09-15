@@ -81,9 +81,7 @@
                 </table>
             </div>
 
-            <div class="icon-box">
-                <input type="submit" value="zapisz">
-            </div>
+            <button type="submit">Send Message</button>
 
 
         </form>

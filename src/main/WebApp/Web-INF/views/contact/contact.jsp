@@ -69,45 +69,46 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>I'm more than ready to get in touch with You and establish new relation between me and your company!</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-4 col-md-4">
             <div class="contact-about">
-              <h3>Lonely</h3>
-              <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-              <div class="social-links">
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-              </div>
+              <h3>You can get me through here:</h3>
+
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
+
             <div class="info">
               <div class="d-flex align-items-center">
                 <i class="bi bi-geo-alt"></i>
-                <p>A108 Adam Street<br>New York, NY 535022</p>
+                <p>Unruga 45a/4<br>81-181 Gdynia</p>
               </div>
 
               <div class="d-flex align-items-center mt-4">
                 <i class="bi bi-envelope"></i>
-                <p>info@example.com</p>
+                <p>robert.t.piechowski@gmail.com</p>
               </div>
 
               <div class="d-flex align-items-center mt-4">
                 <i class="bi bi-phone"></i>
-                <p>+1 5589 55488 55s</p>
+                <p>+48 660 809 870</p>
               </div>
 
             </div>
+            <div class="d-flex align-items-center mt-4">
+            <div class="social-links">
+              <a href="https://www.facebook.com/robert.piechowski/" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.linkedin.com/in/rpiechowski/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+            </div>
           </div>
 
-          <div class="col-lg-5 col-md-8">
+          <%--<div class="col-lg-5 col-md-8">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -127,7 +128,7 @@
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+            </form>--%>
           </div>
 
         </div>

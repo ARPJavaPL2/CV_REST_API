@@ -64,32 +64,29 @@
         <div class="container">
 
             <div class="row no-gutters">
-                <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+                <div class="image col-xl-5 d-flex align-items-stretch justify-content-top justify-content-lg-start"></div>
                 <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
                     <div class="content d-flex flex-column justify-content-center">
-                        <h3>Voluptatem dignissimos provident quasi</h3>
+                        <h3>Get to know me</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                           A few words and numbers about my work so far
                         </p>
                         <div class="row">
                             <div class="col-md-6 d-md-flex align-items-md-stretch">
                                 <div class="count-box">
                                     <i class="bi bi-emoji-smile"></i>
-                                    <span data-purecounter-start="0" data-purecounter-end="65"
+                                    <span data-purecounter-start="0" data-purecounter-end="0"
                                           data-purecounter-duration="1" class="purecounter"></span>
-                                    <p><strong>Happy Clients</strong> consequuntur voluptas nostrum aliquid ipsam
-                                        architecto ut.</p>
+                                    <p><strong>Years as an developer</strong> I'm more than sure, we can change that level!</p>
                                 </div>
                             </div>
 
                             <div class="col-md-6 d-md-flex align-items-md-stretch">
                                 <div class="count-box">
                                     <i class="bi bi-journal-richtext"></i>
-                                    <span data-purecounter-start="0" data-purecounter-end="85"
+                                    <span data-purecounter-start="0" data-purecounter-end="1"
                                           data-purecounter-duration="1" class="purecounter"></span>
-                                    <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et
-                                        quia dere tan</p>
+                                    <p><strong>Projects</strong> this site is my first project so far</p>
                                 </div>
                             </div>
 
@@ -98,18 +95,16 @@
                                     <i class="bi bi-clock"></i>
                                     <span data-purecounter-start="0" data-purecounter-end="240"
                                           data-purecounter-duration="1" class="purecounter"></span>
-                                    <p><strong>Godzin szkolenia</strong> aut commodi quaerat modi aliquam nam ducimus
-                                        aut voluptate non vel</p>
+                                    <p><strong>Hours on spend on Java</strong> </p>
                                 </div>
                             </div>
 
                             <div class="col-md-6 d-md-flex align-items-md-stretch">
                                 <div class="count-box">
                                     <i class="bi bi-award"></i>
-                                    <span data-purecounter-start="0" data-purecounter-end="15"
+                                    <span data-purecounter-start="0" data-purecounter-end="1"
                                           data-purecounter-duration="1" class="purecounter"></span>
-                                    <p><strong>Awards</strong> rerum asperiores dolor alias quo reprehenderit eum et
-                                        nemo pad der</p>
+                                    <p><strong>Certificates</strong> Still looking forward to learn more!</p>
                                 </div>
                             </div>
                         </div>
@@ -126,14 +121,12 @@
 
             <div class="section-title">
                 <h2>Skills</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <p>Things I did learn so far with <a href="https://files.fm/robert.t.piechowski/f/jsqjexcey">link to check certificate</a></p>
             </div>
 
         <%--tu będzie dupa bo są dwie kolumny po 6--%>
             <div class="icon-box">
-                <h8 class="description"><a href='<c:url value="/addSkill"/>'>Dodaj</a></h8>
+                <h6 class="description"><a href='<c:url value="/addSkill"/>'>Dodaj</a></h6>
             </div>
             <div class="row skills-content">
                 <div class="col-lg-6">
@@ -146,13 +139,11 @@
                             </div>
                         </div>
                         <div class="icon-box">
-                            <h8 class="description"><a href='<c:url value="/editSkill/${title.id}"/>'>Edytuj</a></h8>
-                        </div>
-
+                            <h6 class="description"><a href='<c:url value="/editSkill/${title.id}"/>'>Edytuj</a></h6>
                             <form method="post" action='<c:url value="/deleteSkill/${title.id}"/>'>
-                                 <h8 class="icon-box"><input type="submit" value="Kasuj"></h8>
+                                 <h6><input type="submit" value="Kasuj"></h6>
                                 </form>
-
+</div>
                     </c:forEach>
                 </div>
 
@@ -173,6 +164,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
     </section><!-- End Skills Section -->
 
 
