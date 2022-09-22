@@ -125,11 +125,11 @@
             </div>
 
         <%--tu będzie dupa bo są dwie kolumny po 6--%>
-            <div class="icon-box">
-                <h6 class="description"><a href='<c:url value="/addSkill"/>'>Dodaj</a></h6>
-            </div>
             <div class="row skills-content">
                 <div class="col-lg-6">
+                    <div class="icon-box">
+                        <h6 class="description"><a href='<c:url value="/addSkill"/>'>Dodaj</a></h6>
+                    </div>
                     <c:forEach items="${skill}" var="title">
                         <div class="progress">
                             <span class="skill">${title.skills}<i class="val">${title.percent}%</i></span>
@@ -147,22 +147,25 @@
                     </c:forEach>
                 </div>
 
-
                 <div class="col-lg-6">
+                    <div class="icon-box">
+                        <h6 class="description"><a href='<c:url value="/addFrontSkill"/>'>Dodaj</a></h6>
+                    </div>
+                    <c:forEach items="${frontSkills}" var="title">
                     <div class="progress">
-                        <span class="skill">java<i class="val">30%</i></span>
+                        <span class="skill">${title.frontSkills}<i class="val">${title.frontPercent}%</i></span>
                         <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="30"
+                            <div class="progress-bar" role="progressbar" aria-valuenow="${title.frontPercent}"
                                  aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
-                    <div class="progress">
-                        <span class="skill">java<i class="val">30%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="30"
-                                 aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
+                    <div class="icon-box">
+                        <h6 class="description"><a href='<c:url value="/editFrontSkill/${title.id}"/>'>Edytuj</a></h6>
+                        <form method="post" action='<c:url value="/deleteFrontSkill/${title.id}"/>'>
+                            <h6><input type="submit" value="Kasuj"></h6>
+                        </form>
                     </div>
+                </c:forEach>
                 </div>
             </div>
     </section><!-- End Skills Section -->

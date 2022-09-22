@@ -60,7 +60,7 @@
 
     <!-- ======= Skills Section ======= -->
     <div class="container-fluid">
-        <%--tu będzie dupa bo są dwie kolumny po 6--%>
+
 
         <form method="post" action='<c:url value="/editSkill/${skill.id}"/>'>
 
@@ -81,7 +81,7 @@
                 </table>
             </div>
 
-            <button type="submit">Send Message</button>
+            <button type="submit">Wyślij</button>
 
 
         </form>

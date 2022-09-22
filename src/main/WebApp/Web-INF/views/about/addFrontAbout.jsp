@@ -124,12 +124,12 @@
                 <h2>Skills</h2>
             </div>
             <%--tu będzie dupa bo są dwie kolumny po 6--%>
-            <form method="post" action='<c:url value="/addSkill"/>'>
+            <form method="post" action='<c:url value="/addFrontSkill"/>'>
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                     <div class="col-lg-6">
-                        <div class="col-lg-auto"><input type="text" class="form-control" name="skills"
+                        <div class="col-lg-auto"><input type="text" class="form-control" name="frontSkills"
                                                             placeholder="jaki" ></div>
-                        <div class="col-lg-auto"><input type="text" class="form-control" name="percent"
+                        <div class="col-lg-auto"><input type="text" class="form-control" name="frontPercent"
                                                             placeholder="ile" ></div>
                         <div class="icon-box">
                             <input type="submit"value="zapisz">
