@@ -21,13 +21,13 @@ public SkillController(SkillService skillService){
 }
 
 
-    @GetMapping("/frontabout")
+   /* @GetMapping("/frontabout")
     public String getAbout (Model model,Model frontModel){
         List<Skill> skillsList=skillService.getSkills();
         model.addAttribute("skill", skillsList);
         return ("about/about");
     }
-
+*/
     
     @GetMapping("/addSkill")
     public String getAddSkill(){

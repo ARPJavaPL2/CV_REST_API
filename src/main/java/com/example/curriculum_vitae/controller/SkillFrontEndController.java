@@ -47,10 +47,10 @@ public class SkillFrontEndController {
         return  new RedirectView("/about");
     }
     @GetMapping("/editFrontSkill/{id}")
-    public String getEditSkill(@PathVariable("id")Long id, Model model){
+    public String getEditFrontSkill(@PathVariable("id")Long id, Model model){
         SkillFrontEnd skillFrontEnd =skillFrontEndService.getFrontEndSkillByID(id);
         model.addAttribute("skillFront", skillFrontEnd);
-        return "about/editAbout";
+        return "about/editFrontAbout";
     }
     @PostMapping("/editFrontSkill/{id}")
     public RedirectView postEditSkill(@PathVariable("id") Long id, SkillFrontEnd newFrontEndSkill){

@@ -62,7 +62,7 @@
     <div class="container-fluid">
 
 
-        <form method="post" action='<c:url value="/editSkill/${skill.id}"/>'>
+        <form method="post" action='<c:url value="/editFrontSkill/${skillFront.id}"/>'>
 
             <div style="overflow-x: auto;">
                 <table class="editTable">
@@ -73,10 +73,10 @@
                     <tr>
 
                     </tr>
-                    <td><input type="text" class="form-control" name="skills"
-                           placeholder="${skill.skills}" style="font-size:2vw;"></td>
+                    <td><input type="text" class="form-control" name="frontskills"
+                           placeholder="${skillFront.frontSkills}" style="font-size:2vw;"></td>
                     <td><input type="text" class="form-control" name="percent"
-                           placeholder="${skill.percent}" style="font-size:2vw;"></td>
+                           placeholder="${skillFront.frontPercent}" style="font-size:2vw;"></td>
                     </tr>
                 </table>
             </div>
