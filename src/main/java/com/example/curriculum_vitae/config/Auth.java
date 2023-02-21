@@ -20,11 +20,7 @@ public class Auth extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication()
-                .withUser("test")
-                .password(passwordEncoder().encode("test"))
-                .roles("USER")
-                .and().
+        auth.inMemoryAuthentication().
                 withUser("admin")
                 .password(passwordEncoder().encode("admin"))
                 .roles("ADMIN");
@@ -33,9 +29,9 @@ public class Auth extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/", "/persons") //mamy dostęp na ROLE_USER tylko do tych wymienionych URL
-                .hasAnyAuthority("ROLE_USER") // definiujemy role dla powyższych URL
-                .antMatchers("/tasks") //mamy dostęp na ROLE_ADMIN tylko do tych wymienionych URL
+                /*.antMatchers("/", "/contact","/resume","/skill","/about") //mamy dostęp na ROLE_USER tylko do tych wymienionych URL
+                .hasAnyAuthority("ROLE_USER") // definiujemy role dla powyższych URL*/
+                .antMatchers("/", "/contact","/resume","/skill","/about","/addSkill","/editSkill/{id}","/deleteSkill/{id}","/addFrontSkill","/editFrontSkill/{id}","deleteFrontSkill/{id}","/editSkill","/editFrontSkill") //mamy dostęp na ROLE_ADMIN tylko do tych wymienionych URL
                 .hasAnyAuthority("ROLE_ADMIN")// definiujemy role dla powyższych URL
                 .and() // dopisujemy aby kontynuować konfiguracje kolejnych bloków
                 .csrf().disable() // wyączamy csrf do testowania postmanem
@@ -46,8 +42,8 @@ public class Auth extends WebSecurityConfigurerAdapter {
                 .usernameParameter("username")//nadajemy nazwę jaka będzie jako name w inpucie loginu formularza
                 .passwordParameter("password")//nadajemy nazwę jaka będzie jako name w inpucie hasła formularza
                 .loginProcessingUrl("/login")
-                .failureForwardUrl("/login?error") // co się stanie jak będzie błąd logowania
-                .defaultSuccessUrl("/persons") // co sięstanie w momencie prawidłowego wpisania loginu i hasła
+                .failureForwardUrl("/contact") // co się stanie jak będzie błąd logowania
+                .defaultSuccessUrl("/") // co sięstanie w momencie prawidłowego wpisania loginu i hasła
                 .and()
                 .logout()
                 .logoutSuccessUrl("/"); // wskazujemy na który endpoint ma nas przekierować jak się wyloghujmey

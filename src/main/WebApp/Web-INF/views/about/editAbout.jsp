@@ -45,8 +45,8 @@
             <ul>
                 <li><a class="nav-link scrollto active" href="/">Home</a></li>
                 <li><a class="nav-link scrollto" href="/about">About</a></li>
-                <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
-                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                <li><a class="nav-link scrollto" href="/resume">Resume</a></li>
+                <li><a class="nav-link scrollto" href="/contact">Contact</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -60,7 +60,7 @@
 
     <!-- ======= Skills Section ======= -->
     <div class="container-fluid">
-        <%--tu będzie dupa bo są dwie kolumny po 6--%>
+
 
         <form method="post" action='<c:url value="/editSkill/${skill.id}"/>'>
 
@@ -81,9 +81,7 @@
                 </table>
             </div>
 
-            <div class="icon-box">
-                <input type="submit" value="zapisz">
-            </div>
+            <button type="submit">Wyślij</button>
 
 
         </form>
