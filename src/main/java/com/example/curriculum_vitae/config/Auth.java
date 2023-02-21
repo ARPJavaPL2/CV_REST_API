@@ -31,7 +31,8 @@ public class Auth extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 /*.antMatchers("/", "/contact","/resume","/skill","/about") //mamy dostęp na ROLE_USER tylko do tych wymienionych URL
                 .hasAnyAuthority("ROLE_USER") // definiujemy role dla powyższych URL*/
-                .antMatchers("/", "/contact","/resume","/skill","/about","/addSkill","/editSkill/{id}","/deleteSkill/{id}","/addFrontSkill","/editFrontSkill/{id}","deleteFrontSkill/{id}","/editSkill","/editFrontSkill") //mamy dostęp na ROLE_ADMIN tylko do tych wymienionych URL
+                //todo - deleted endpoint "/" for role admin - krystian
+                .antMatchers("/contact","/resume","/skill","/about","/addSkill","/editSkill/{id}","/deleteSkill/{id}","/addFrontSkill","/editFrontSkill/{id}","deleteFrontSkill/{id}","/editSkill","/editFrontSkill") //mamy dostęp na ROLE_ADMIN tylko do tych wymienionych URL
                 .hasAnyAuthority("ROLE_ADMIN")// definiujemy role dla powyższych URL
                 .and() // dopisujemy aby kontynuować konfiguracje kolejnych bloków
                 .csrf().disable() // wyączamy csrf do testowania postmanem

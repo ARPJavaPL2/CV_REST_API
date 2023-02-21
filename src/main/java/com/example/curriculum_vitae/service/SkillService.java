@@ -20,7 +20,6 @@ public class SkillService {
 
     public void addSkill(Skill skill){
         skillRepository.save(skill);
-        System.out.println("added new skill: "+skill.getId());
     }
 
     public Skill getSkillById (Long id){

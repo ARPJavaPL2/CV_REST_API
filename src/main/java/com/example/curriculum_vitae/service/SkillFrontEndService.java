@@ -19,7 +19,6 @@ public class SkillFrontEndService {
     public List<SkillFrontEnd> getFrontSkills(){return skillFrontEndRepository.findAll();}
     public void addFrontSkill(SkillFrontEnd skillFrontEnd){
         skillFrontEndRepository.save(skillFrontEnd);
-        System.out.println("added new frontskill: "+skillFrontEnd.getId());
     }
     public SkillFrontEnd getFrontEndSkillByID(Long id){return skillFrontEndRepository.findById(id).orElse(null);}
     public void editFrontSkill(SkillFrontEnd skillFrontEnd){skillFrontEndRepository.save(skillFrontEnd);}
