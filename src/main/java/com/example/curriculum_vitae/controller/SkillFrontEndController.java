@@ -53,13 +53,13 @@ public class SkillFrontEndController {
         return "about/editFrontAbout";
     }
     @PostMapping("/editFrontSkill/{id}")
-    public RedirectView postEditSkill(@PathVariable("id") Long id, SkillFrontEnd newFrontEndSkill){
+    public RedirectView postEditFrontSkill(@PathVariable("id") Long id, SkillFrontEnd newFrontEndSkill){
         skillFrontEndService.editFrontSkill(newFrontEndSkill);
         return new RedirectView("/about");
     }
 
     @PostMapping("deleteFrontSkill/{id}")
-    public RedirectView postEditSkill(@PathVariable("id") Long id){
+    public RedirectView postEditFrontSkill(@PathVariable("id") Long id){
         skillFrontEndService.deleteFrontSkill(id);
         return new RedirectView("/about");
     }

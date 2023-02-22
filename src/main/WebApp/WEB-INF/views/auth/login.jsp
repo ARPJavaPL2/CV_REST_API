@@ -22,6 +22,9 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Witaj !</h1>
                   </div>
+
+                  <div>Login dla admina użytkownika to "admin", hasło "admin"</div>
+
                   <form class="user" method="post" action='<c:url value="/login"/>'>
                     <div class="form-group">
                       <input type="text" class="form-control form-control-user" id="exampleInputEmail" name="username" aria-describedby="emailHelp" placeholder="Wprowadź swój login...">
@@ -39,9 +42,9 @@
                     <hr>
 
                   </form>
-                  <div class="text-center">
+                  <%--<div class="text-center">
                     <a class="small" href="register.jsp">Utwórz konto!</a>
-                  </div>
+                  </div>--%>
                 </div>
               </div>
             </div>

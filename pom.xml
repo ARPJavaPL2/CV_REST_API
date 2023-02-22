@@ -12,8 +12,8 @@
     <artifactId>Curriculum_Vitae</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Curriculum_Vitae</name>
-    <description>Curriculum_Vitae</description>
+    <name>curriculum_vitae</name>
+    <description>curriculum_vitae</description>
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -78,6 +78,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <mainClass>com.example.curriculum_vitae.CurriculumVitaeApplication</mainClass>
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>

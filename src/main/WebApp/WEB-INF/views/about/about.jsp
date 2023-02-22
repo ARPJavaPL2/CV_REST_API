@@ -49,6 +49,7 @@
                 <li><a class="nav-link scrollto" href="/about">About</a></li>
                 <li><a class="nav-link scrollto" href="/resume">Resume</a></li>
                 <li><a class="nav-link scrollto" href="/contact">Contact</a></li>
+                <li><a class="nav-link scrollto" href="/login">Login</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -127,6 +128,7 @@
         <%--tu będzie dupa bo są dwie kolumny po 6--%>
             <div class="row skills-content">
                 <div class="col-lg-6">
+                    <h2>Backend Skill</h2>
                     <div class="icon-box">
                         <h6 class="description"><a href='<c:url value="/addSkill"/>'>Dodaj</a></h6>
                     </div>
@@ -145,9 +147,60 @@
                                 </form>
 </div>
                     </c:forEach>
+                    <div class="progress">
+                        <span class="skill">Java<i class="val">25%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">JUnit<i class="val">10%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="10"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">Mockito<i class="val">10%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="10"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">Assert J<i class="val">10%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="10"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">Spring Framework<i class="val">15%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="15"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">SQL (MySQL Workbench)<i class="val">25%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">Hibernate<i class="val">15%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="15"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="col-lg-6">
+                    <h2>FrontEnd Skill</h2>
                     <div class="icon-box">
                         <h6 class="description"><a href='<c:url value="/addFrontSkill"/>'>Dodaj</a></h6>
                     </div>
@@ -166,6 +219,20 @@
                         </form>
                     </div>
                 </c:forEach>
+                    <div class="progress">
+                        <span class="skill">CSS<i class="val">15%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="15"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">HTML<i class="val">15%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="15"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
     </section><!-- End Skills Section -->
